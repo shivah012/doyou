@@ -66,27 +66,3 @@ button:nth-child(2) {
 }
 
 /* Media Query for Phones */
-@media (max-width: 600px) {
-    h2 {
-        font-size: 1.2em;
-        margin: 10px 0;
-    }
-
-    .btn-group {
-        flex-direction: column;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    button {
-        position: static;
-        width: 100%;
-        height: 40px;
-        font-size: 1em;
-        margin: 10px 0;
-    }
-
-    .gif {
-        width: 90%;
-    }
-}
