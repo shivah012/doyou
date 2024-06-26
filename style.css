@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://th.bing.com/th/id/OIP.rABdE69pF7G2_m1EHjLUOAHaFj?rs=1&pid=ImgDetMain");
+    background-color: rgba(149, 162, 189, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gif {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.049);
+}
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #0f2b7a;
+    font-size: 1.2em;
+}
+
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #0f2b7a;
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+    background: white;
+    color: #0f2b7a;
+}
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    button {
+        position: static;
+        width: 100%;
+        height: 40px;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .gif {
+        width: 90%;
+    }
+}
